@@ -1151,7 +1151,7 @@ func typeFields(t reflect.Type) structFields {
 						tag:       tagged,
 						index:     index,
 						typ:       ft,
-						omitEmpty: opts.Contains("omitempty"),
+						omitEmpty: false, //opts.Contains("omitempty"),
 						quoted:    quoted,
 					}
 					field.nameBytes = []byte(field.name)
